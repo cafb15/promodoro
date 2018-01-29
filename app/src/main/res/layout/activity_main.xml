@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.macary.promodoro.MainActivity">
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/SBTheme"/>
+
+    <com.macary.promodoro.CircleTimer
+        android:id="@+id/ct_promodoro"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        app:circleColor="@color/colorPrimary"
+        app:text="25:00:00"
+        app:textSize="30sp"
+        app:rimColor="#40000000"
+        app:barColor="@android:color/white"
+        app:barWidth="2dp"
+        app:rimWidth="3dp"
+        android:layout_centerInParent="true"
+        app:textColor="@android:color/white"/>
+</RelativeLayout>
